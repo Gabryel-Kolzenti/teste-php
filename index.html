@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="shortcut icon" href="">
+    <title>Formatação</title>
+</head>
+<body>
+    
+    <h1>Formate seu texto</h1>
+    <h2>Tematica deu a louca no esquilinho</h2>
+    <form action="cores.php" method="get">
+
+        <label for="itexto">Insira seu texto:</label>
+        <input type="text" name="texto" id="itexto">
+        <br>
+
+        <label for="itamanho">Tamanho da Fonte:</label>
+        <select name="tamanho" id="itamanho">
+
+            <!--Medida relativa como: pt, vh, vw, %, EM, Rem...-->
+            <!--Medida Absoluta como: px, in, cm, mm, pt, pc...-->
+            <!--Relativas: Flexíveis e úteis, vairam de acordo com tela e tamanho de outros elementos(%), ideal para layouts responsivos.
+            Absolutas: Fixas e precisas, ideais para dimensionamento específico.-->
+            <option value="8pt">8</option>
+            <option value="10pt">10</option>
+            <option value="14pt">14</option>
+            <option value="22pt">20</option>
+            <option value="38pt">38</option>
+
+        </select>
+        <br>
+
+        <label for="icor">Escolha a Cor:</label>
+        <input type="color" name="cor" id="icor">
+        <br>
+
+        <label for="imagem">Escolha o background:</label>
+        <select name="imagem" id="imagem">
+
+            <!--Medida relativa como: pt, vh, vw, %, EM, Rem...-->
+            <!--Medida Absoluta como: px, in, cm, mm, pt, pc...-->
+            <!--Relativas: Flexíveis e úteis, vairam de acordo com tela e tamanho de outros elementos(%), ideal para layouts responsivos.
+            Absolutas: Fixas e precisas, ideais para dimensionamento específico.-->
+            <option value="img/hoodwinked1.jpg">Chapeuzinho Vermelho</option>
+            <option value="img/images.jfif">Lobo Jornalista</option>
+            <option value="img/23129.jpg">Ligeirinho</option>
+            <option value="img/mqdefault.jpg">Bode Cantor</option>
+
+        </select>
+        <br>
+
+        <label for="ifonte">Escolha a Fonte:</label>
+        <select name="fonte" id="ifonte">
+
+            <!--Medida relativa como: pt, vh, vw, %, EM, Rem...-->
+            <!--Medida Absoluta como: px, in, cm, mm, pt, pc...-->
+            <!--Relativas: Flexíveis e úteis, vairam de acordo com tela e tamanho de outros elementos(%), ideal para layouts responsivos.
+            Absolutas: Fixas e precisas, ideais para dimensionamento específico.-->
+            <option value="Courier New">Courier New</option>
+            <option value="Gill Sans">Gill Sans</option>
+            <option value="Impact">Impact</option>
+
+        </select>
+        <br>
+        <input id="gerar" type="submit" value="Gerar">
+
+    </form>
+
+</body>
+</html>
